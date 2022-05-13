@@ -1,6 +1,13 @@
 initial_balance = 10000
-rate = 1.1
+RATE = 1.1
 
 print(initial_balance)
-print(initial_balance * rate)
-print(initial_balance * rate * rate)
+print(initial_balance * RATE)
+print(initial_balance * RATE * RATE)
+
+# initial_balance = 11000
+initial_balance += 11000
+
+print(initial_balance)
+print(initial_balance * RATE)
+print(initial_balance * RATE * RATE)
