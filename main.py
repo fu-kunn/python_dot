@@ -1,18 +1,4 @@
-import random
+print(10_000_000)
 
-answer = random.randint(1, 10)
-count = 0
-
-while True:
-  print("Your guess?", end="")
-  guess = int(input())
-  # count = count + 1
-  count += 1
-
-  if answer == guess:
-      print("Bingo It took %i guesses!" %count)
-      break
-  elif answer > guess:
-      print("Bigger!")
-  else:
-      print("Smaller!")
+print(1.2e4)
+print(1.2e-4)
