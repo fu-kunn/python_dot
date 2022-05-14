@@ -1,9 +1,10 @@
-score = int(input("Score? "))
+# 論理演算子
 
-if score > 80:
+eng_score = int(input("English score? "))
+math_score = int(input("Math score? "))
+
+# if eng_score == 100 and math_score == 100:
+if not(eng_score == 100 or math_score == 100):
     print("OK")
-    print("Good Job")
 else:
     print("NG")
-    print("Nice try")
-print("End of program")
