@@ -1,5 +1,6 @@
-initial_barance = int(input("Initial Balance? "))
-RATE = 1.1
-print(f"Year 0: {initial_barance:,.2f}")
-print(f"Year 1: {initial_barance * RATE:,.2f}")
-print(f"Year 2: {initial_barance * RATE * RATE:,.2f}")
+score = int(input("Score? "))
+
+if score > 80:
+    print("OK")
+    print("Good Job")
+print("End of program")
