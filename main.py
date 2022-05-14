@@ -1,10 +1,10 @@
-# 論理演算子
+signal = input("Sgnal color? ")
 
-eng_score = int(input("English score? "))
-math_score = int(input("Math score? "))
-
-# if eng_score == 100 and math_score == 100:
-if not(eng_score == 100 or math_score == 100):
-    print("OK")
+if signal == "red":
+    print("Stop")
+elif signal == "yellow":
+    print("Slow down")
+elif signal == "blue" or signal == "green":
+    print("Go")
 else:
-    print("NG")
+    print("Invalid signal color...")
