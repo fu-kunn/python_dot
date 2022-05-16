@@ -1,8 +1,6 @@
-# 反復処理
-
-# for i in range(10):
-# ３から２刻みで９まで
-# for i in range(3, 9, 2):
-# 10から3まで
-for i in range(10, 2, -1):
-    print(f"{i} Hello")
+initial_balance = int(input("Initial Balance? "))
+RATE = 1.1
+# yearは変数
+for year in range(10):
+    print(f"Year {year}: {initial_balance * RATE ** year:,.2f}")
+    
