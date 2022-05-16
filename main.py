@@ -1,5 +1,8 @@
-# while command != 0:
-while 1 == 1:
+# 真偽値
+# True それ以外
+# False 0 0.0 '' None
+
+while True:
     command = int(input("Select 1, 2, 3 (0: Exit) "))
     match command:
         case 1:
