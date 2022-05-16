@@ -9,4 +9,8 @@ while 1 == 1:
         case 3:
             print("Menu 3")
         case 0:
-            pass
+            break
+        case _:
+            print("Invalid command, try again")
+            continue
+    print("Menu processed correctly")
