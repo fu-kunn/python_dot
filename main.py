@@ -1,8 +1,6 @@
-# for 回数が決まっている
-# while 回数が決まっていない
-
-command = int(input("Select 1, 2, 3 (0: Exit) "))
-while command != 0:
+# while command != 0:
+while 1 == 1:
+    command = int(input("Select 1, 2, 3 (0: Exit) "))
     match command:
         case 1:
             print("Menu 1")
@@ -10,4 +8,5 @@ while command != 0:
             print("Menu 2")
         case 3:
             print("Menu 3")
-    command = int(input("Select 1, 2, 3 (0: Exit) "))        
+        case 0:
+            pass
