@@ -1,9 +1,13 @@
-initial_balance = int(input("Initial Balance? "))
-RATE = 1.1
+# for 回数が決まっている
+# while 回数が決まっていない
 
-# 1と2の時に+10000の処理を行う
-for i in range(3):
-    if i != 0:
-        initial_balance += 10_000
-    for year in range(3):
-        print(f"Year {year}: {initial_balance * RATE ** year:,.2f}")
+command = int(input("Select 1, 2, 3 (0: Exit) "))
+while command != 0:
+    match command:
+        case 1:
+            print("Menu 1")
+        case 2:
+            print("Menu 2")
+        case 3:
+            print("Menu 3")
+    command = int(input("Select 1, 2, 3 (0: Exit) "))        
