@@ -1,9 +1,5 @@
-# def get_price(a, b):
-#     return a + b
+def greet(name, by):
+    print(f"{by} said, hi! {name}")
 
-# print(get_price(300, 700))
-
-def get_price(a, b):
-    print(a + b)
-
-get_price(300, 700)
+greet(by="John", name="Taro") #キーワード引数
+greet("Jiro", "Rich") #位置引数
