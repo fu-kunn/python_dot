@@ -1,7 +1,15 @@
-def show_time(h, m, s=0, ms=0):
-    print(f"{h:02}:{m:02}:{s:02}:{ms:03}")
+def print_username(name):
+    # if name != "admin" and name != "support":
+    #     print(name)
+    if name == "admin":
+        return
+    if name == "support":
+        return
 
-show_time(11, 23, 52, 220)
-show_time(4, 54, 2, 12)
-show_time(12, 3)
-show_time(5, 25, 32)
+    print(name)
+
+print_username("jiro")
+print_username("admin")
+print_username("taro")
+print_username("saburo")
+print_username("support")
