@@ -1,15 +1,7 @@
-def print_username(name):
-    # if name != "admin" and name != "support":
-    #     print(name)
-    if name == "admin":
-        return
-    if name == "support":
-        return
-
-    print(name)
-
-print_username("jiro")
-print_username("admin")
-print_username("taro")
-print_username("saburo")
-print_username("support")
+def get_price(a, b):
+    total = a + b #ローカル変数
+    return total
+    
+total = 30 #グローバル変数
+print(get_price(300, 700))
+print(total)
