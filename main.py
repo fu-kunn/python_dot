@@ -1,5 +1,9 @@
-def double(n):
-    return n * 2 #仮引数
-    
-print(double(10)) #実引数
-print(double(4) * 3)
+# def get_price(a, b):
+#     return a + b
+
+# print(get_price(300, 700))
+
+def get_price(a, b):
+    print(a + b)
+
+get_price(300, 700)
