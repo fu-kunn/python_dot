@@ -1,11 +1,5 @@
-# def double(n):
-#     return n * 2
+scores = [10, 20, 30, 40]
+scores[1] = 100 
 
-# def triple(n):
-#     return n * 3
-
-def calc(n, func):
-    return func(n)
-
-print(calc(10, lambda n: n * 2))
-print(calc(10, lambda n: n * 3))
+print(scores)
+print(scores[0])
