@@ -1,5 +1,4 @@
 scores = [10, 20, 30, 40]
-scores[1] = 100 
+scores.append(60)
 
 print(scores)
-print(scores[0])
