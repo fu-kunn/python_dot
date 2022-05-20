@@ -1,11 +1,9 @@
 scores = [10, 20, 30, 40]
-# scores.append(60)
 
+# scores.remove(20)
 
-# scores.extend([70, 80])
-scores += [70, 80]
+# poped_item = scores.pop(2)
 
-scores.insert(1, 15)
-scores *= 3
+del scores[2]
 
 print(scores)
