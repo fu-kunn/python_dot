@@ -1,7 +1,6 @@
 def get_price(a, b):
-    total = a + b #ローカル変数
+    total = (a + b) * rate #値が代入されていない変数→外のスコープ
     return total
     
-total = 30 #グローバル変数
+rate = 1.1
 print(get_price(300, 700))
-print(total)
