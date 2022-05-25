@@ -1,11 +1,8 @@
-nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+prices = [100, 200, 150, 200, 100]
 
-# nums[2:5] = [200, 300, 400]
+# for price in prices:
+#     print(price * 1.1)
 
-# sliced_list = nums[2:5]
-# sliced_list = nums[2:8:2]
-# sliced_list = nums[8:2:-2]
-sliced_list = nums[::-1]
-
-# print(nums)
-print(sliced_list)
+# enumerate 関数
+for index, price in enumerate(prices):
+    print(f"{index}: {price * 1.1:.2f}")
