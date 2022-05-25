@@ -1,9 +1,8 @@
-scores = [10, 20, 30, 40]
+scores = [10, 20, 30, 20, 40]
 
-# scores.remove(20)
+print(len(scores))
 
-# poped_item = scores.pop(2)
+# 最初に見つかった値
+print(scores.index(20))
 
-del scores[2]
-
-print(scores)
+print(20 in scores)
