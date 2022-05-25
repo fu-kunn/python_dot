@@ -1,8 +1,12 @@
 scores = [10, 20, 30, 20, 40]
 
-print(len(scores))
+# scores.reverse()
 
-# 最初に見つかった値
-print(scores.index(20))
+# sort 値の小さい順
+# scores.sort(reverse=True)
 
-print(20 in scores)
+scores_sorted = sorted(scores, reverse=True)
+
+
+print(scores)
+print(scores_sorted)
