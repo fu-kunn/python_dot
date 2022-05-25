@@ -1,10 +1,11 @@
-prices = [100, 200, 150, 200, 100]
+# タプル
+# 要素を変更できない
 
-# prices_with_tax = []
-# for price in prices:
-#     if price != 200:
-#         prices_with_tax.append(price * 1.1)
+tokyo = "JPY", 36, 140
 
-prices_with_tax = [price * 1.1 for price in prices if price != 200]
+tokyo = list(tokyo)
+tokyo[0] = "YEN"
+tokyo = tuple(tokyo)
 
-print(prices_with_tax)
+print(tokyo)
+print(tokyo[0])
