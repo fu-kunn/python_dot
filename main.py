@@ -1,12 +1,7 @@
-scores = [10, 20, 30, 20, 40]
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# scores.reverse()
+# nums[2:5] = [200, 300, 400]
 
-# sort 値の小さい順
-# scores.sort(reverse=True)
+nums[3:] = []
 
-scores_sorted = sorted(scores, reverse=True)
-
-
-print(scores)
-print(scores_sorted)
+print(nums)
