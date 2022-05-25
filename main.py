@@ -1,8 +1,10 @@
 prices = [100, 200, 150, 200, 100]
 
-# for price in prices:
-#     print(price * 1.1)
+# append リストの要素を追加する
+prices_with_tax = []
+for price in prices:
+    prices_with_tax.append(price * 1.1)
 
-# enumerate 関数
-for index, price in enumerate(prices):
-    print(f"{index}: {price * 1.1:.2f}")
+prices_with_tax = [price * 1.1 for price in prices]    
+
+print(prices_with_tax)
