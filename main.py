@@ -1,13 +1,12 @@
-tokyo = "JPY", 36, 140
+# シーケンス
 
-currency, lat, long = tokyo
-# _, lat, long = tokyo
+name = "Taro Yamada"
 
-# print(currency)
-# print(lat)
-# print(long)
+# print(name[0])
+# print(name[4:])
 
-# currency, *location = tokyo
-currency, *_ = tokyo
-print(currency)
-# print(location)
+replaced_string = name.replace("Taro", "Jiro")
+upper_string = name.upper()
+
+print(replaced_string)
+print(upper_string)
