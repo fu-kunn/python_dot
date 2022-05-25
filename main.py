@@ -1,11 +1,13 @@
-# タプル
-# 要素を変更できない
-
 tokyo = "JPY", 36, 140
 
-tokyo = list(tokyo)
-tokyo[0] = "YEN"
-tokyo = tuple(tokyo)
+currency, lat, long = tokyo
+# _, lat, long = tokyo
 
-print(tokyo)
-print(tokyo[0])
+# print(currency)
+# print(lat)
+# print(long)
+
+# currency, *location = tokyo
+currency, *_ = tokyo
+print(currency)
+# print(location)
