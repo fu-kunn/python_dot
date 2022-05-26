@@ -1,13 +1,10 @@
 #　集合
 
-members = {"Taro", "Jiro", "Saburo"}
+eng_members = ["Shiro", "Jiro", "Saburo"]
+math_members = ["Taro", "Jiro", "Saburo"]
 
-# members.add("Siro")
-# members.remove("Taro")
+eng_members = set(eng_members)
+math_members = set(math_members)
 
-# print(members)
-
-print(len(members))
-
-# frozen_members = frozenset(members)
-# frozen_members.add("Goro")
+# print(eng_members | math_members)
+print(eng_members & math_members)
