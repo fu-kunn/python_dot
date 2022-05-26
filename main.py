@@ -1,12 +1,8 @@
-# シーケンス
+# birthday = "2011-11-27"
+# print(birthday.split("-"))
 
-name = "Taro Yamada"
+# birthday = ["2011", "11", "27"]
+# print("-".join(birthday))
 
-# print(name[0])
-# print(name[4:])
-
-replaced_string = name.replace("Taro", "Jiro")
-upper_string = name.upper()
-
-print(replaced_string)
-print(upper_string)
+birthday = [2011, 11, 27]
+print("-".join([str(n) for n in birthday]))
