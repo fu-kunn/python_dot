@@ -1,12 +1,14 @@
-# scores = [62, 91, 88]
-
 scores = {"math":62, "english":91, "physics":88}
 
-# scores["math"] = 100
-scores["chemistry"] = 40
-# del scores["english"]
-popped_value = scores.pop("english")
+# for key in scores.keys():
+#     print(key)
 
-print(scores)
-# print(scores["english"])
-print(popped_value)
+# for value in scores.values():
+#     print(value)
+
+# for item in scores.items():
+#     key, value = item
+#     print(f"{key:8} {value:3}")
+
+for key, value in scores.items():
+    print(f"{key:8} {value:3}")
