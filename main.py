@@ -7,6 +7,12 @@ scores = [
 print("Name     Math      English")
 print("-------- --------- --------")
 
+# def compare(score):
+#     return score["math"]
+
+# scores.sort(key=compare, reverse=True)
+scores.sort(key=lambda score: score["math"], reverse=True)
+
 for score in scores:
     for value in score.values():
         print(f"{value:8} ", end="")
