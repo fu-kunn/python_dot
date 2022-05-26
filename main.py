@@ -1,10 +1,8 @@
-#　集合
+nums = [10, 20, 30]
+# nums_bak = nums
+nums_bak = nums.copy()
+nums[0] = 100
 
-eng_members = ["Shiro", "Jiro", "Saburo"]
-math_members = ["Taro", "Jiro", "Saburo"]
-
-eng_members = set(eng_members)
-math_members = set(math_members)
-
-# print(eng_members | math_members)
-print(eng_members & math_members)
+# どちらも100,20,30が表示される コピーメソッドを使わない
+print(nums)
+print(nums_bak)
