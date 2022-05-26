@@ -1,12 +1,14 @@
-keys = ["math", "english", "physics"]
-values = [62, 91, 84]
+scores = [
+  {"name": "Taro", "math":70, "english":82},
+  {"name": "Jiro", "math":67, "english":61},
+  {"name": "Saburo", "math":81, "english":58},
+  ]
 
-# scores = {}
-# for item in zip(keys, values):
-#     # print(item)
-#     key, value = item
-#     scores[key] = value
+print("Name     Math      English")
+print("-------- --------- --------")
 
-scores = {key: value for key, value in zip(keys, values)}
-
-print(scores)
+for score in scores:
+    for value in score.values():
+        print(f"{value:8} ", end="")
+    # print()のインデントに注意
+    print()
