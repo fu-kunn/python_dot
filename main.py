@@ -1,15 +1,17 @@
-import datetime
+import calendar
 
+#曜日を日曜日始まりにする
+# calendar.setfirstweekday(6)
+calendar.setfirstweekday(calendar.SUNDAY)
 
-day1 = datetime.datetime(year=2000, month=4, day=11)
-day2 = datetime.datetime(year=2001, month=1, day=1)
+# cal_str = calendar.month(2001, 1)
+# print(cal_str)
 
-# diff = day2 - day1
-# diff_seconds = diff.total_seconds()
-# diff_days = diff_seconds / 60 / 60 / 24
-# print(diff_seconds)
-# print(diff_days)
+#データ型取得す場合
+#週ごとの表示になっておりデータがない場合は「0」が表示される
+# cal_date = calendar.monthcalendar(2001, 1)
+# print(cal_date)
 
-delta = datetime.timedelta(days=3, hours=5)
-day3 = day1 + delta
-print(day3)
+#閏年がある年をtrueかfalseで返す
+print(calendar.isleap(2000))
+print(calendar.isleap(2001))
