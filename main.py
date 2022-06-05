@@ -1,6 +1,6 @@
 import math
+#変更したくない値は慣習的に大文字表記する「PI」
+from math import pi as PI
 
-print(math.sqrt(2))
-print(math.ceil(3.5))
-print(math.floor(3.5))
-print(math.gcd(12, 20)) #3.9以降は引数が3つ以上、3.５以降は引数が
+# print(math.pi)
+print(PI)
