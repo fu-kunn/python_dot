@@ -1,6 +1,9 @@
-import math
-#変更したくない値は慣習的に大文字表記する「PI」
-from math import pi as PI
+import datetime
 
-# print(math.pi)
-print(PI)
+# now = datetime.datetime.now()
+# print(now)
+
+# birthday = datetime.datetime(year=2000, month=4, day=11)
+# 文字列から値を作る方法
+birthday = datetime.datetime.strptime("2000-04-11", "%Y-%m-%d")
+print(birthday)
