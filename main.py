@@ -1,11 +1,14 @@
-# import random
-# import random as r
-from random import randint
+import random
 
-# n = random.random() #０以上１未満
-# n = random.randint(1, 6)
-# n = r.randint(1, 6)
-n = randint(1, 6)
+names = ["Taro", "Taro", "Taro", "Jiro", "Saburo", "Shiro", "Goro", ]
 
+# random.shuffle(names)
+# print(names)
 
-print(n)
+# winner = random.choice(names)
+# print(winner)
+
+# winners = random.choices(names, k=3)
+names = list(set(names))
+winners = random.sample(names, 3)
+print(winners)
