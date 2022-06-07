@@ -1,14 +1,9 @@
-file_name = "names.txt"
-# names = ["Taro", "Jiro", "Saburo", "Shiro"]
+from pprint import pprint
 
-# with open(file_name, mode="w") as f:
-#     for name in names:
-#         f.write(f"{name}\n")
+scores = [
+  {"name": "Taro", "math": 70, "english": 82},
+  {"name": "Jiro", "math": 67, "english": 61},
+  {"name": "Saburo", "math": 81, "english": 58},
+]
 
-#r=read テキストファイルの内容を読み込む
-with open(file_name, mode="r") as f:
-    # names = f.read()
-    
-    #splitlines()=文字列を改行で分解してリスト化する
-      names = f.read().splitlines()
-print(names, end="")   
+pprint(scores)
