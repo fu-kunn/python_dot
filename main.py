@@ -1,9 +1,7 @@
-from pprint import pprint
+import requests
 
-scores = [
-  {"name": "Taro", "math": 70, "english": 82},
-  {"name": "Jiro", "math": 67, "english": 61},
-  {"name": "Saburo", "math": 81, "english": 58},
-]
+url = 'https://jsonplaceholder.typicode.com/posts/'
+res = requests.get(url)
+res.status_code
 
-pprint(scores)
+print(res.status_code)
